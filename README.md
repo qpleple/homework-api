@@ -6,9 +6,10 @@ Homework API -- Getting Homework Done
 This API is an interface to order some homework to be done.
 
 Limitations :
- * high school level only
- * languages english or french
- * 1000 characters per exercise
+
+* high school level only
+* languages english or french
+* 1000 characters per exercise
 
 ## USAGE
 
