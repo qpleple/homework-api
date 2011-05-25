@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api>
+	<method http="GET" name="submitHomework" route="/submitHomework" >
+		<result type="simple" name="HomeworkId"/>
+	</method>
+
+	<method http="GET" name="getHomeworkStatus" route="/status/{id}">
+		<result type="simple" name="HomeworkStatus"/>
+	</method>
+
+	<method http="GET" name="getHomeworkSolution" route ="/solution/{id}">
+		<result type="simple" name="HomeworkSolution"/>
+	</method>
+</api>
