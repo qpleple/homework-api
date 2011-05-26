@@ -9,7 +9,7 @@
 		<result type="simple" name="HomeworkId"/>
 	</method>
 
-	<method http="GET" name="getHomeworkStatus" route="/status/{id}">
+	<method http="GET" name="status" route="/status/{id}">
 		<url><![CDATA[/status/{id}]]></url>
 		<parameters>
 			<parameter>id</parameter>
@@ -17,7 +17,7 @@
 		<result type="simple" name="HomeworkStatus"/>
 	</method>
 
-	<method http="GET" name="getHomeworkSolution" route ="/solution/{id}">
+	<method http="GET" name="solution" route ="/solution/{id}">
 		<url><![CDATA[/solution/{id}]]></url>
 		<parameters>
 			<parameter>id</parameter>

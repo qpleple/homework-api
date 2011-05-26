@@ -34,7 +34,7 @@ class ComponentAPI extends MashapeRestAPI
         return $id;
     }
 
-    public function getHomeworkStatus($id) {
+    public function status($id) {
         $status = Model::getHomeworkStatus($id);
         if ($status == null) {
             parent::addError(404, "Homework not found.", 404);
@@ -42,7 +42,7 @@ class ComponentAPI extends MashapeRestAPI
         return $status;
     }
 
-    public function getHomeworkSolution($id) {
+    public function solution($id) {
         $status = Model::getHomeworkStatus($id);
         if ($status == null) {
             parent::addError(404, "Homework not found.", 404);
