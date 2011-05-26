@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<api>
+<api baseUrl="http://www.homeworkapi.dotcloud.com">
 	<method http="GET" name="submitHomework" route="/submitHomework" >
 		<result type="simple" name="HomeworkId"/>
 	</method>
