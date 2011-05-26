@@ -6,6 +6,7 @@ class SQL {
     static $bdd;
 
     static public function open($db_server, $db_user, $db_passwd, $db_name) {
+        echo "$db_server, $db_user, $db_passwd, $db_name";
         try {
             $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
             
