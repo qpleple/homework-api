@@ -1,10 +1,10 @@
 <?php
 
 require_once("mashape/mashape.php");
+require_once("src/config.php");
 require_once("src/sql.php");
 require_once("src/model.php");
 require_once("src/notification.php");
-require_once("src/config.php");
 require_once("lib/class.phpgmailer.php");
 
 // The path of the XML configuration file required by Mashape:
