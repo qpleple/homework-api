@@ -5,8 +5,8 @@ $db_port = "3306";
 $db_user = "root";
 $db_passwd = "root";
 $db_name = "homeworkapi";
-die ($_SERVER['SERVER_NAME']);
-if ($_SERVER['SERVER_NAME'] == "homeworkapi") {
+
+if ($_SERVER['SERVER_NAME'] == "homeworkapi-www") {
     $db_server = "db.homeworkapi.dotcloud.com";
     $db_port = "5581";
     $db_user = "root";
