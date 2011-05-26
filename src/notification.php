@@ -1,12 +1,14 @@
 <?php
 function homeworkSubmittedNotification($id) {
+    global $gmail_username, $gmail_password, $gmail_from, $gmail_to;
+    
     $mail = new PHPGMailer();
-    $mail->Username = 'qpleple@gmail.com'; 
-    $mail->Password = 'Iat2Ci2R9K3P24FCWGu963641oLkps';
-    $mail->From = 'qpleple@gmail.com'; 
+    $mail->Username = $gmail_username; 
+    $mail->Password = $gmail_password;
+    $mail->From = $gmail_from; 
     $mail->FromName = 'Homework API';
     $mail->Subject = '[Homework] New one !';
-    $mail->AddAddress('quentin.pleple@gmail.com');
+    $mail->AddAddress($gmail_to);
     $mail->Body = "You have work to do !\nid = $id";
     $mail->Send();
 }

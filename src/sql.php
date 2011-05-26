@@ -1,11 +1,12 @@
 <?php
 
-SQL::open($db_server, $db_port, $db_user, $db_passwd, $db_name);
+SQL::open();
 
 class SQL {
     static $bdd;
-
-    static public function open($db_server, $db_port, $db_user, $db_passwd, $db_name) {
+    static public function open() {
+        global $db_server, $db_port, $db_user, $db_passwd, $db_name;
+        
         $db_connection = "mysql:host=$db_server;port=$db_port;dbname=$db_name";
         try {
             $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
