@@ -6,7 +6,7 @@
 		<parameters>
 			<parameter>content</parameter>
 		</parameters>
-		<result type="simple" name="HomeworkId"/>
+		<result type="simple" name="response"/>
 	</method>
 
 	<method http="GET" name="status" route="/status/{id}">
@@ -14,7 +14,7 @@
 		<parameters>
 			<parameter>id</parameter>
 		</parameters>
-		<result type="simple" name="HomeworkStatus"/>
+		<result type="simple" name="response"/>
 	</method>
 
 	<method http="GET" name="solution" route ="/solution/{id}">
@@ -22,6 +22,6 @@
 		<parameters>
 			<parameter>id</parameter>
 		</parameters>
-		<result type="simple" name="HomeworkSolution"/>
+		<result type="simple" name="response"/>
 	</method>
 </api>
