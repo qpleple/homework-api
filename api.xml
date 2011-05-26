@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api baseUrl="http://www.homeworkapi.dotcloud.com">
 	
-	<method http="GET" name="submitHomework" route="/submitHomework" >
-		<url><![CDATA[/submitHomework?content={content}]]></url>
+	<method http="POST" name="submitHomework" route="/submitHomework" >
+		<url><![CDATA[/submitHomework]]></url>
 		<parameters>
 			<parameter>content</parameter>
 		</parameters>
