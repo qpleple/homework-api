@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<api baseUrl="http://homeworkapi.example.com">
-	
+<api>
 	<method http="POST" name="submitHomework" route="/submitHomework" >
-		<url><![CDATA[/submitHomework]]></url>
-		<parameters>
-			<parameter>content</parameter>
-		</parameters>
 		<result type="simple" name="response"/>
 	</method>
 
 	<method http="GET" name="status" route="/status/{id}">
-		<url><![CDATA[/status/{id}]]></url>
-		<parameters>
-			<parameter>id</parameter>
-		</parameters>
 		<result type="simple" name="response"/>
 	</method>
 
 	<method http="GET" name="solution" route ="/solution/{id}">
-		<url><![CDATA[/solution/{id}]]></url>
-		<parameters>
-			<parameter>id</parameter>
-		</parameters>
 		<result type="simple" name="response"/>
 	</method>
 </api>
