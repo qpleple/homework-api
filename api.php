@@ -11,7 +11,7 @@ require_once("lib/class.phpgmailer.php");
 define("CONFIGURATION_FILEPATH", "./api.xml");
 
 // This is the server key for your component
-define("SERVER_KEY", "the-server-key");
+define("SERVER_KEY", $server_key);
 
 class ComponentAPI extends MashapeRestAPI
 {
