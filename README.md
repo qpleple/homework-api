@@ -15,3 +15,8 @@ You can get the solution of the exercise when the job is done with a GET request
 
 powered by mashape.com API Framework (http://www.mashape.com/)
 
+## INSTALLATION
+
+* Edit `config-example.php` into `config.php` by filling out the parameters
+* Edit `api-example.php` into `api.php` by changing the `baseUrl`
+* If you are behind Nginx and you can not use Apache url rewriting, add the line `try_files $uri /api.php;` to the nginx configuration.
