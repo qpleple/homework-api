@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api baseUrl="http://www.homeworkapi.dotcloud.com">
+	
 	<method http="GET" name="submitHomework" route="/submitHomework" >
+		<url><![CDATA[/submitHomework?content={content}]]></url>
+		<parameters>
+			<parameter>content</parameter>
+		</parameters>
 		<result type="simple" name="HomeworkId"/>
 	</method>
 
 	<method http="GET" name="getHomeworkStatus" route="/status/{id}">
+		<url><![CDATA[/status/{id}]]></url>
+		<parameters>
+			<parameter>id</parameter>
+		</parameters>
 		<result type="simple" name="HomeworkStatus"/>
 	</method>
 
 	<method http="GET" name="getHomeworkSolution" route ="/solution/{id}">
+		<url><![CDATA[/solution/{id}]]></url>
+		<parameters>
+			<parameter>id</parameter>
+		</parameters>
 		<result type="simple" name="HomeworkSolution"/>
 	</method>
 </api>
