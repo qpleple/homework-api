@@ -1,4 +1,9 @@
 <?php
+/**
+ * Fill out the parameters and rename this file into "config.php"
+ */
+
+
 // Server Key (here : http://www.mashape.com/account/apis/created )
 $server_key = "your-server-key";
 
