@@ -15,7 +15,6 @@ define("SERVER_KEY", $server_key);
 
 class ComponentAPI extends MashapeRestAPI
 {
-    // Don't edit the constructor code
     public function __construct() {
         parent::__construct(dirname(__FILE__));
     }
