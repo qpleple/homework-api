@@ -5,6 +5,8 @@ Homework API -- Getting Homework Done
 
 This API is an interface to order some homework to be done.
 
+See the hosted version on Mashape : http://www.mashape.com/apis/Getting%20Homework%20Done
+
 ## USAGE
 
 POST request on `/submitHomework` with the parameter `content` containing the exercise will issue a job id. An notification email is sent to the API host with the id of the new homework.
